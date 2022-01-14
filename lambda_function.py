@@ -2,6 +2,7 @@ import numpy as np
 import onnxruntime as ort
 import argparse
 import time
+import boto3
 
 def get_model(model_name, bucket_name):
     s3_client = boto3.client('s3')    
